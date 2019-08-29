@@ -6,11 +6,52 @@
              mc:Ignorable="d"
              x:Class="XamWallet.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout VerticalOptions="Center"
+                 Padding="30">
+
+        <Label Text=".NET Libra Wallet"
+               HorizontalTextAlignment="Center"
+               FontSize="20"
+               FontAttributes="Bold"/>
+
+        <Entry x:Name="addressEntry"
+               Placeholder="Address"
+               IsReadOnly="False"/>
+
+        <Entry x:Name="mnemonicEntry"
+               Placeholder="Mnemonic"
+               IsReadOnly="True"/>
+
+        <!--<Button Text="Create Account"
+                x:Name="createAccountButton"/>-->
+
+        <Entry Placeholder="Mint amount in LIB"
+               x:Name="mintAmoutEntry"
+               Keyboard="Numeric"
+               Text="1000"/>
+
+        <Button Text="Mint"
+                x:Name="mintButton"/>
+
+        <Label Text="Balance"
+               HorizontalTextAlignment="Center"
+               x:Name="balanceLabel"/>
+
+        <Button Text="Query Balance"
+                x:Name="balanceButton"/>
+
+        <Entry Placeholder="receiverAddress"
+               x:Name="receiverEntry"
+               Text="088d3666a015c3da28c9e67e9bf67ad0a048b33e4e085cf8a04daf94729c5d4a"/>
+
+        <Entry Placeholder="Transfer amount LIB"
+               x:Name="transferAmountEntry"
+               Text="10"/>
+
+        <Button Text="Transfer"
+                x:Name="transferButton"/>
+
+        
     </StackLayout>
 
 </ContentPage>
